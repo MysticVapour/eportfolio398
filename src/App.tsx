@@ -316,17 +316,26 @@ export default function App() {
 
         <div className="grid grid--pitch reveal">
           <div className="video">
-            <div className="video__frame" role="img" aria-label="Pitch video placeholder">
-              <div className="video__play" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="36" height="36">
-                  <path d="M8 5v14l11-7z" fill="currentColor" />
-                </svg>
-              </div>
-              <span className="video__title">Code and Reentry Pitch Video</span>
-              <span className="video__hint">Video embed goes here.</span>
+            <div className="video__frame">
+              <iframe
+                className="video__embed"
+                src="https://www.youtube.com/embed/Feoao0FZITE"
+                title="Code and Reentry Pitch Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </div>
             <p className="video__note">
-              Replace this placeholder with the final uploaded pitch video or embed link.
+              <strong>Code and Reentry Pitch Video</strong> ·{" "}
+              <a
+                className="video__link"
+                href="https://youtu.be/Feoao0FZITE"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Watch on YouTube
+              </a>
             </p>
           </div>
 
